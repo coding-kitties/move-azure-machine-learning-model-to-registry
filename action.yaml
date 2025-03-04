@@ -1,0 +1,36 @@
+name: 'Register Azure Machine Learning Model in Registry'
+description: 'Register Azure Machine Learning Model in Registry'
+author: 'Marc van Duyn'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+
+inputs:
+  source_registry_name:
+    description: 'Source Azure Container Registry Name'
+    required: true
+  source_workspace_name:
+    description: 'Source Azure ML Workspace Name'
+    required: true
+  source_resource_group:
+    description: 'Source Azure Resource Group'
+    required: true
+  destination_resource_group:
+    description: 'Destination Azure Resource Group'
+    required: true
+  destination_registry_name:
+    description: 'Destination Azure Container Registry Name'
+    required: true
+  destination_registry_resource_group:
+    description: 'Destination Azure Container Registry Resource Group'
+    required: true
+  model_name:
+    description: 'Model Name'
+    required: true
+  model_version:
+    description: 'Model Version'
+    required: true
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
