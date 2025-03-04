@@ -1,5 +1,5 @@
-name: 'Register Azure Machine Learning Model in Registry'
-description: 'Register Azure Machine Learning Model in Registry'
+name: 'Move Azure Machine Learning Model to Registry'
+description: 'Move Azure Machine Learning Model to Registry'
 author: 'Marc van Duyn'
 branding:
   icon: 'cloud'
